@@ -107,8 +107,8 @@ boot_live_root() {
 
 # Boot process for applying root filesystem encryption/decryption
 boot_infosec() {
-      udevadm settle --timeout=3 --quiet
-      killall "${_UDEV_DAEMON##*/}" 2>/dev/null
+      #udevadm settle --timeout=3 --quiet
+      #killall "${_UDEV_DAEMON##*/}" 2>/dev/null
 
       mkdir -p /run/media/hda2
       mount /dev/hda2 /run/media/hda2
